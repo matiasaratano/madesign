@@ -1,0 +1,31 @@
+@keyframes rainbow {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.animate-rainbow {
+  animation: rainbow 2s linear infinite;
+}
+
+:root {
+  --color-1: 255, 0, 0;
+  --color-2: 255, 165, 0;
+  --color-3: 255, 255, 0;
+  --color-4: 0, 255, 0;
+  --color-5: 0, 0, 255;
+}
+
+.dark {
+  --color-1: 255, 0, 0;
+  --color-2: 255, 165, 0;
+  --color-3: 255, 255, 0;
+  --color-4: 0, 255, 0;
+  --color-5: 0, 0, 255;
+}
