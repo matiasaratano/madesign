@@ -93,7 +93,7 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
       {isMenuOpen && (
-        <div className="fixed inset-0 top-16 z-50 bg-white dark:bg-black p-6 flex flex-col gap-4 overflow-y-auto">
+        <div className="fixed inset-0 top-16 z-50 bg-white dark:bg-black p-6 flex flex-col gap-4 h-screen overflow-y-auto">
           <nav className="flex flex-col gap-4">
             {["Inicio", "Proyectos", "Servicios", "Nosotros"].map((label, index) => {
               const paths = ["/", "/proyectos", "/servicios", "/sobre-mi"];

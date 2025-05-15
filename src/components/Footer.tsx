@@ -3,17 +3,17 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
   return <footer className="bg-black text-white py-12">
       <div className="container-custom">
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 justify-items-center">
-          <div>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 justify-items-center">
+          <div className="text-center">
             <Link to="/" className="inline-block mb-4">
-              <img alt="21d Logo" className="h-8 w-auto" src="/lovable-uploads/f909d12d-c90d-4348-80ae-13724e19f937.png" />
+              <img alt="21d Logo" className="h-8 w-auto mx-auto" src="/lovable-uploads/f909d12d-c90d-4348-80ae-13724e19f937.png" />
             </Link>
-            <p className="text-gray-400 mt-4 max-w-sm">Creando experiencias web funcionales para hacer crecer tu negocio.</p>
+            <p className="text-gray-400 mt-4 max-w-sm mx-auto">Creando experiencias web funcionales para hacer crecer tu negocio.</p>
           </div>
           
-          <div>
+          <div className="text-center">
             <h3 className="text-lg font-medium mb-4">Enlaces rápidos</h3>
-            <ul className="space-y-2 text-gray-400">
+            <ul className="space-y-2 text-gray-400 mx-auto max-w-sm">
               <li>
                 <Link to="/" className="hover:text-white transition-colors">
                   Inicio
@@ -37,9 +37,9 @@ const Footer = () => {
             </ul>
           </div>
           
-          <div>
+          <div className="text-center">
             <h3 className="text-lg font-medium mb-4">Contacto</h3>
-            <ul className="space-y-2 text-gray-400">
+            <ul className="space-y-2 text-gray-400 mx-auto max-w-sm">
               <li>madesign@gmail.com</li>
               <li>+54 11 24027007</li>
               <li>Villa Gesell, Argentina</li>

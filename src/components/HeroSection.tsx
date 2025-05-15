@@ -8,7 +8,7 @@ const HeroSection = () => {
   return <div className="bg-black text-white py-32 md:py-48">
       <div className="container-custom mx-auto text-center">
         <div className="mb-8">
-          <img src="/lovable-uploads/5e8d1aa7-1a51-41fc-bc33-a82de393e6e4.png" alt="MA Design Logo" className="h-28 mx-auto mb-6" />
+          <img src="/lovable-uploads/5e8d1aa7-1a51-41fc-bc33-a82de393e6e4.png" alt="MA Design Logo" className="h-28 md:h-32 mx-auto mb-6" />
         </div>
         
         <SplitText

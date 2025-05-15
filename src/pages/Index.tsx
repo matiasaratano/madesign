@@ -37,27 +37,27 @@ const Index = () => {
     {
       src: "./logos/bdtlogo.png",
       alt: "bdt Logo",
-      height: 20,
+      height: 12,
     },
     {
       src: "./logos/logo2.png",
       alt: "departamentos norte Logo",
-      height: 10,
+      height: 6,
     },
     {
       src: "./logos/eetlogo.png",
       alt: "eet Logo",
-      height: 16,
+      height: 8,
     },
     {
       src: "./logos/logolabe.webp",
       alt: "laberint Logo",
-      height: 20,
+      height: 12,
     },
     {
       src: "./logos/logoeet.png",
       alt: "En esta tierra Logo",
-      height: 20,
+      height: 12,
     },
    
   ];

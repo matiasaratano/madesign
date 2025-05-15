@@ -33,8 +33,8 @@ const Contacto = () => {
                 <p className="mb-8 text-gray-600 dark:text-gray-300">
                   Rellena nuestro formulario de contacto para discutir tu proyecto y obtener un presupuesto personalizado.
                 </p>
-                <div className="flex">
-                  <TallyButton text="Rellenar formulario" className="group relative inline-flex h-11 cursor-pointer items-center justify-center rounded-xl px-8 py-2 font-medium transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white bg-gradient-to-r from-blue-600 to-indigo-600 text-white hover:from-blue-700 hover:to-indigo-700" />
+                <div className="flex justify-center">
+                  <TallyButton text="Rellenar formulario" className="inline-flex items-center justify-center rounded-md bg-primary px-4 py-2 text-sm font-medium text-white hover:bg-primary/90" />
                 </div>
               </div>
               
@@ -49,7 +49,7 @@ const Contacto = () => {
                     <Mail className="h-6 w-6 text-primary mr-4" />
                     <div>
                       <h3 className="font-medium">Email</h3>
-                      <p className="text-gray-600 dark:text-gray-300">madesign@gmail.com</p>
+                      <p className="text-gray-600 dark:text-gray-300">info@21d.dev</p>
                     </div>
                   </div>
                   
@@ -57,7 +57,7 @@ const Contacto = () => {
                     <Phone className="h-6 w-6 text-primary mr-4" />
                     <div>
                       <h3 className="font-medium">Teléfono</h3>
-                      <p className="text-gray-600 dark:text-gray-300">+54 1124027007</p>
+                      <p className="text-gray-600 dark:text-gray-300">+34 000 000 000</p>
                     </div>
                   </div>
                   
@@ -65,7 +65,7 @@ const Contacto = () => {
                     <MapPin className="h-6 w-6 text-primary mr-4" />
                     <div>
                       <h3 className="font-medium">Ubicación</h3>
-                      <p className="text-gray-600 dark:text-gray-300">Villa Gesell, Argentina</p>
+                      <p className="text-gray-600 dark:text-gray-300">Madrid, España</p>
                     </div>
                   </div>
                 </div>

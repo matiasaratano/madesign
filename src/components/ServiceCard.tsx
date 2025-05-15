@@ -17,13 +17,13 @@ const ServiceCard = ({
 }: ServiceCardProps) => {
   return (
     <Card className={cn("h-full border-0 shadow-md hover:shadow-lg transition-shadow duration-300", className)}>
-      <CardHeader className="pb-0">
-        <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-lg bg-primary/10">
+      <CardHeader className="pb-0 text-center">
+        <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-lg bg-primary/10 mx-auto">
           {icon}
         </div>
         <CardTitle className="text-xl">{title}</CardTitle>
       </CardHeader>
-      <CardContent>
+      <CardContent className="text-center">
         <p className="text-gray-600 dark:text-gray-400">{description}</p>
       </CardContent>
     </Card>
