@@ -76,7 +76,7 @@ const Index = () => {
           <ContainerScroll titleComponent={<h2 className="text-center text-xl md:text-4xl font-semibold text-white mb-10">
                 Experiencias web <span className="text-4xl md:text-5xl font-bold">Modernas</span>
               </h2>}>
-            <img src="./diseno.png" alt="Desarrollo web" className="mx-auto rounded-2xl object-cover h-full object-center" draggable={false} />
+            <img src="/lovable-uploads/5e8d1aa7-1a51-41fc-bc33-a82de393e6e4.png" alt="MA Design Logo" className="h-20 md:h-28 mx-auto mb-6" />
           </ContainerScroll>
         </section>
 
@@ -137,6 +137,16 @@ const Index = () => {
               <p className="text-gray-600 dark:text-gray-300">
                 Explora algunos de nuestros trabajos más recientes
               </p>
+              {customers.map((logo, index) => (
+                <img
+                  key={index}
+                  className="mx-auto h-auto w-fit dark:invert max-h-[40px] max-w-[80px] object-contain md:max-h-[65px] md:max-w-[120px]"
+                  src={logo.src}
+                  alt={logo.alt}
+                  height={logo.height}
+                  width="auto"
+                />
+              ))}
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-center">
