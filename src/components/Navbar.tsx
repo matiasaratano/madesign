@@ -1,11 +1,22 @@
 import { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { TallyButton } from "@/components/ui/TallyButton";
 import { Menu, X, ChevronDown } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 const Navbar = () => {
+  const navigate = useNavigate();
+  const location = useLocation();
+
+  useEffect(() => {
+    // Scroll to top when route changes
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  }, [location.pathname]);
+
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
@@ -52,6 +63,14 @@ const Navbar = () => {
                       ? "text-black dark:text-white hover:text-primary"
                       : "text-white hover:text-white"
                   )}
+                  onClick={(e) => {
+                    e.preventDefault();
+                    navigate(paths[index]);
+                    window.scrollTo({
+                      top: 0,
+                      behavior: 'smooth'
+                    });
+                  }}
                 >
                   <span className="relative z-10">{label}</span>
                   <span

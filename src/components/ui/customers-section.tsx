@@ -57,7 +57,7 @@ export function CustomersSection({ customers = [], className }: CustomersSection
           {customers.map((logo, index) => (
             <div key={index} className="flex">
               <img
-                className="mx-auto h-auto w-fit dark:invert max-h-[65px] max-w-[120px] object-contain"
+                className="mx-auto h-auto w-fit dark:invert max-h-[30px] max-w-[60px] object-contain sm:max-h-[45px] sm:max-w-[90px] md:max-h-[65px] md:max-w-[120px]"
                 src={logo.src}
                 alt={logo.alt}
                 height={logo.height}
