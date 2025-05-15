@@ -3,7 +3,7 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
   return <footer className="bg-black text-white py-12">
       <div className="container-custom">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 justify-items-center">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 justify-items-center">
           <div>
             <Link to="/" className="inline-block mb-4">
               <img alt="21d Logo" className="h-8 w-auto" src="/lovable-uploads/f909d12d-c90d-4348-80ae-13724e19f937.png" />
