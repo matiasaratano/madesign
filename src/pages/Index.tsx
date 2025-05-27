@@ -71,7 +71,7 @@ const Index = () => {
         <CustomersSection customers={customers} />
 
         {/* Scroll Animation Section */}
-        <section className="overflow-hidden bg-black text-white py-10">
+        <section className="overflow-hidden bg-black text-white py-20 md:py-32">
           <ContainerScroll titleComponent={<h2 className="text-center text-xl md:text-4xl font-semibold text-white mb-10">
                 Experiencias web <span className="text-4xl md:text-5xl font-bold">Modernas</span>
               </h2>}>

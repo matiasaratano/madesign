@@ -1,4 +1,3 @@
-
 import React from "react";
 import { ChevronRight } from "lucide-react";
 import { AnimatedGroup } from "@/components/ui/animated-group";
@@ -37,7 +36,7 @@ interface CustomersSectionProps {
 
 export function CustomersSection({ customers = [], className }: CustomersSectionProps) {
   return (
-    <section className={`bg-background pb-16 pt-16 md:pb-32 ${className ?? ""}`}>
+    <section className={`bg-background pb-8 pt-8 md:pb-16 md:pt-16 ${className ?? ""}`}>
       <div className="m-auto max-w-5xl px-6">
 
         <AnimatedGroup
@@ -52,7 +51,7 @@ export function CustomersSection({ customers = [], className }: CustomersSection
             },
             ...transitionVariants,
           }}
-          className="mx-auto mt-12 grid max-w-4xl grid-cols-5 gap-8"
+          className="mx-auto mt-6 mb-6 md:mt-0 md:mb-0 grid max-w-4xl grid-cols-5 gap-8"
         >
           {customers.map((logo, index) => (
             <div key={index} className="flex">

@@ -49,7 +49,7 @@ const Contacto = () => {
                     <Mail className="h-6 w-6 text-primary mr-4" />
                     <div>
                       <h3 className="font-medium">Email</h3>
-                      <p className="text-gray-600 dark:text-gray-300">info@21d.dev</p>
+                      <p className="text-gray-600 dark:text-gray-300">madesign@gmail.com</p>
                     </div>
                   </div>
                   
@@ -57,7 +57,7 @@ const Contacto = () => {
                     <Phone className="h-6 w-6 text-primary mr-4" />
                     <div>
                       <h3 className="font-medium">Teléfono</h3>
-                      <p className="text-gray-600 dark:text-gray-300">+34 000 000 000</p>
+                      <p className="text-gray-600 dark:text-gray-300">+54 11 24027007</p>
                     </div>
                   </div>
                   
@@ -65,7 +65,7 @@ const Contacto = () => {
                     <MapPin className="h-6 w-6 text-primary mr-4" />
                     <div>
                       <h3 className="font-medium">Ubicación</h3>
-                      <p className="text-gray-600 dark:text-gray-300">Madrid, España</p>
+                      <p className="text-gray-600 dark:text-gray-300">Villa Gesell, Argentina</p>
                     </div>
                   </div>
                 </div>
