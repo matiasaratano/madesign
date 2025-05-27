@@ -40,7 +40,7 @@ const Footer = () => {
           <div className="text-center">
             <h3 className="text-lg font-medium mb-4">Contacto</h3>
             <ul className="space-y-2 text-gray-400 mx-auto max-w-sm">
-              <li>madesign@gmail.com</li>
+              <li>madesign.vg@gmail.com</li>
               <li>+54 11 24027007</li>
               <li>Villa Gesell, Argentina</li>
             </ul>
