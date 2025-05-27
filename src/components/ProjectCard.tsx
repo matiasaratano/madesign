@@ -1,3 +1,5 @@
+import { useEffect, useRef } from "react";
+import { useInView } from "react-intersection-observer";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
@@ -18,22 +20,46 @@ const ProjectCard = ({
   tags,
   link = "#"
 }: ProjectCardProps) => {
-  // Derivamos el poster a partir del nombre del video
   const posterUrl = videoUrl.replace(/\.\w+$/, ".png");
+  const videoRef = useRef<HTMLVideoElement>(null);
+
+  const { ref, inView } = useInView({
+    triggerOnce: true,
+    threshold: 0.1,
+  });
+
+  // Forzar play cuando el video puede reproducirse
+  useEffect(() => {
+    if (inView && videoRef.current) {
+      const attemptPlay = () => {
+        videoRef.current?.play().catch(() => {
+          // Algunos browsers lo bloquean, no hacemos nada
+        });
+      };
+
+      videoRef.current.addEventListener("loadeddata", attemptPlay);
+      return () => {
+        videoRef.current?.removeEventListener("loadeddata", attemptPlay);
+      };
+    }
+  }, [inView]);
 
   return (
     <Card className="overflow-hidden group border-0 shadow-lg">
-      <div className="relative overflow-hidden">
-        <video
-          src={videoUrl}
-          poster={posterUrl}
-          preload="none"
-          className="w-full h-64 object-cover transform transition-transform duration-500 group-hover:scale-105"
-          autoPlay
-          muted
-          loop
-          playsInline
-        />
+      <div ref={ref} className="relative overflow-hidden">
+        {inView && (
+          <video
+            ref={videoRef}
+            src={videoUrl}
+            poster={posterUrl}
+            preload="none"
+            muted
+            playsInline
+            loop
+            autoPlay
+            className="w-full h-64 object-cover transform transition-transform duration-500 group-hover:scale-105"
+          />
+        )}
       </div>
       <CardContent className="p-6">
         <div className="flex flex-wrap gap-2 mb-3">
