@@ -30,7 +30,7 @@ const Proyectos = () => {
       description: "Website En esta tierra, complejo turístico en Villa Gesell.",
       videoUrl: "./tierra.mp4",      
       tags: ["HTML", "CSS", "Javascript", "Landing"],
-      link: "https://matiasaratano.github.io/enestatierra/"
+      link: "https://matiasaratano.github.io/enestatierra/",
     },
     
   ];
