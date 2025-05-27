@@ -6,7 +6,7 @@ interface TallyButtonProps {
 }
 
 export function TallyButton({ text, className }: TallyButtonProps) {
-  const baseClassName = "text-white hover:text-white flex items-center justify-center";
+  const baseClassName = "text-white hover:text-white flex items-center justify-center h-9 text-sm";
   return (
     <button
       data-tally-open="3lgkQp"

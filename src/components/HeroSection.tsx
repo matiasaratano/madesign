@@ -1,4 +1,3 @@
-
 import { Link } from "react-router-dom";
 import SplitText from "@/components/ui/SplitText";
 import { ModernButton } from "@/components/ui/ModernButton";
@@ -28,13 +27,12 @@ const HeroSection = () => {
 
         </p>
         
-        <div className="flex flex-col sm:flex-row justify-center gap-4">
+        <div className="flex flex-row justify-center gap-4">
           <ModernButton asChild variant="primary">
             <Link to="/proyectos">Ver Proyectos</Link>
           </ModernButton>
           <ModernButton asChild variant="secondary">
             <TallyButton text="Contáctanos" className="text-black !text-black hover:text-primary" />
-
           </ModernButton>
         </div>
       </div>
