@@ -1,4 +1,3 @@
-
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
@@ -19,11 +18,16 @@ const ProjectCard = ({
   tags,
   link = "#"
 }: ProjectCardProps) => {
+  // Derivamos el poster a partir del nombre del video
+  const posterUrl = videoUrl.replace(/\.\w+$/, ".png");
+
   return (
     <Card className="overflow-hidden group border-0 shadow-lg">
       <div className="relative overflow-hidden">
         <video
           src={videoUrl}
+          poster={posterUrl}
+          preload="none"
           className="w-full h-64 object-cover transform transition-transform duration-500 group-hover:scale-105"
           autoPlay
           muted
