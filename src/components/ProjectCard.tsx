@@ -56,7 +56,7 @@ const ProjectCard = ({
             muted
             playsInline
             loop
-            autoPlay
+      
             className="w-full h-64 object-cover transform transition-transform duration-500 group-hover:scale-105"
           />
         )}
